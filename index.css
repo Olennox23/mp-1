@@ -93,6 +93,7 @@ main h2{
     font-family: "Arial", sans-serif, "helavetica"; /* different font for home */
 }
 
+
 ul{
     list-style: none; /* remove bullet points */
 
@@ -168,6 +169,49 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
     margin: 1vh auto;
 }
 
+/* experience starts here */
+    #exp-inner{
+        display : flex;
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 0;
+
+
+    }
+    #exp-inner h2{
+        padding: 2vh;
+
+
+    }
+
+    #exp-inner table{
+        width: 90%;
+        border-collapse: collapse;
+        border: 3px solid steelblue;
+        margin: 0 auto;
+        padding: 2vh 0;
+    }
+    #exp-inner table td{
+        font-size: calc(8px + 2vh);
+        padding: 1vw;
+        border: 3px solid steelblue;
+    }
+
+/*skills staarts here
+
+*/
+    #skills-inner h2{
+        padding: 2vh;
+    }
+    #skills-inner ul li{
+        border : none;
+        background-color: transparent;
+        border-left: solid red 5px;
+        font-size: calc(5px + 2vh);
+
+    }
 
 
 
@@ -246,12 +290,18 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
 
 
     }
-    #education li{
+    #education li {
         width: 90%;
         font-size: calc(2px + 2vh);
         margin: 2vh auto;
 
+
     }
+    #skills-inner ul li{
+        font-size: calc(2px + 2vh);
+        padding-right: 3vw;
+    }
+
 }
 
 
