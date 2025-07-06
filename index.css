@@ -1,122 +1,233 @@
-*{
+*{  /* Set default margins to 0 for all elements, and declare fonts I am using */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  "Gill Sans", "Arial", sans-serif, "helavetica";
 }
-#wrapper{
-   width: 80vw;
-   margin: auto;
+
+#wrapper{ /* class that wraps around head, main, nav, and footer*/
+   width: 80vw; /* width of page become 80% of width of screem */
+   margin: auto; /* make margin even on both sides */
     background-color: lightgray;
+
+
+
 }
-header, footer{
+
+#container{ /* make nav and main side by side */
+    display: flex;
+
+    flex-direction: row;
+    width: 100%;
+
+
+
+}
+
+header, footer{ /* make the header and footer encompass 100% of its parent */
     background-color: steelblue;
     width : 100%;
     padding-left: 5px;
 
 
 }
-header{
+header{ /* give the header more space, makes text less cramped */
     padding-top: 5px;
     padding-bottom: 5px;
+
+
 }
-footer{
-    font-size: calc(3px + 2vw);
+footer{ /* adjust size of footer */
+    font-size: calc(3px + 1vw);
+
+
 }
-nav{
+nav{ /* make nav bar the  30% of the width of its parents always*/
     background-color: dimgray;
     width : 30%;
     padding-top: 2vw;
+
+(   2px + 1.5vw);
 }
 main{
-    width : 70%;
+    width : 70%; /* fill in the other 70% */
     display: flex;
-    flex-direction: row;
-
+    flex-direction: row; /* the main content is now alligned in a row */
     background-color:  #f0f4f8;;
     padding-left: 2vw;
+    min-height: 100vh; /* Flexible but ensures full coverage */
+    height: auto; /* Prevents abrupt jumps */
 }
 #bot{
     padding-top: 3vw;
     display : flex;
-    flex-direction: row;
+    flex-direction: row; /* Make the short bio and image side by side */
     width: 100%;
     text-align: center;
     padding-bottom: 4vh ;
+    padding-right: 2vw;
 
 }
+
+#intro{
+    padding-right: 3vw; /* make intro more spacious */
+    font-size: calc(15px + 2vh); /* make text grow/shrink with scrren */
+}
+#bio{
+    padding-top: 1vw; /* bio more spacious */
+    font-size: calc(20px + 2vh); /* make text grow/shrink with scrren */
+}
 #bot img{
-    max-width: 25vw;
+    max-width: 25vw; /* adjust headshot size */
     height: auto;
     padding-right: 1vw;
 }
 main p{
-    font-size: calc(10px + 2vw);
     text-align: center;
 }
 
 
 main h2{
     text-align: center;
-    font-size: calc(10px + 2vw);
+    font-size: calc(20px + 2vw);
+    font-family: "Arial", sans-serif, "helavetica"; /* different font for home */
 }
+
 ul{
-    list-style: none;
+    list-style: none; /* remove bullet points */
 
 }
-ul li{
+
+ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
     border: black solid 1px;
     background-color: lightgray;
     font-size : calc(8px + 2vw);
     padding: 10px;
-    margin: 20px;
+    margin: 20px auto;
     width: 80%;
     color:steelblue;
     text-align: center;
 }
-#container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh
 
+/* starting on education */
+.main-inner { /* make education center */
+    width: 100%;
+
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 0;
+}
+#education li{
+    list-style: none;
+    border: none;
+    border-left: goldenrod solid 3vw;
 
 }
+#education{
+    padding-bottom: 2vh;
+    padding-top: 0;
+}
+#bu, #pc{
+    width : 10vh;
+    height: auto;
+    padding: 1vh 0;
+    background-color: transparent;
+}
+#pc_bio{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: calc(5px + 2vh);
+    height: auto;
+    padding-right: 2vh;
+
+}
+#pc_sep{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+#bu_bio{
+    padding-top: 2vh;
+    font-size: calc(8px + 1.2vh);
+    padding-right: 4vw;
+    text-align: center;
+
+}
+
+
+#bu_sep{
+    display: flex;
+    flex-direction: row;
+    width: 100%;}
+#coursework ul li {
+    padding-top: 1vh;
+    font-size: calc(5px + 1vh);
+    padding-right: 2vh;
+    border-left:red solid 3px;
+    margin: 1vh auto;
+}
+
+
+
+
+
 @media screen and (max-width: 1000px) {
-    #container{
+    /* if the screen is below 1000px
+       edit the display */
+    #container { /* nav is now above column, both are 100% width of its parents*/
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    main{
+
+    main { /* edit padding */
         width: 100%;
-        height: 100%;
+
         padding-top: 5px;
     }
-    nav{
+
+
+    nav { /*edit padding */
         padding-top: 2px;
         padding-bottom: 2px;
         width: 100%;
     }
-    ul{
+
+    ul { /* make links appear in a row */
         display: flex;
         flex-direction: row;
 
     }
-    ul li{
-        font-size: calc(2px + 1.2vw);
+
+    ul li { /* adjust font size and padding */
+        font-size: calc(2px + 1.4vw);
         padding: 2px;
         margin: 10px auto;
         width: 15%;
+
     }
-    #bot{
-       display: flex;
+    #intro{
+        font-size: calc(5px + 2vh);
+    }
+    #bio{
+        font-size: calc(5px + 2vh);
+    }
+
+    #bot { /* adjust image and bio to vertical apperance */
+        display: flex;
         flex-direction: column;
         width: 100%;
-        padding-top: 2vh;
-        padding-bottom: 5vh;
-        font-size: calc(10px + 1.2vh);
+        padding-top: 1vh;
+        padding-bottom: 3vh;
+
     }
-    #bot img{
+
+    main p{
+        text-align: center;
+    }
+
+    #bot img { /*center image */
         max-width: 30vh;
         height: auto;
         display: block;
@@ -124,8 +235,24 @@ ul li{
         padding-bottom: 3vh;
     }
 
+    header {
+        text-align: center;
+    }
+
+    /* education < 1000px */
+    #education {
+        display: flex;
+        flex-direction: column;
+
 
     }
+    #education li{
+        width: 90%;
+        font-size: calc(2px + 2vh);
+        margin: 2vh auto;
+
+    }
+}
 
 
 
