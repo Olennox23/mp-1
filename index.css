@@ -8,7 +8,7 @@
 #wrapper{ /* class that wraps around head, main, nav, and footer*/
    width: 80vw; /* width of page become 80% of width of screem */
    margin: auto; /* make margin even on both sides */
-    background-color: lightgray;
+    background-color:  #f0f4f8;
 
 
 
@@ -16,7 +16,6 @@
 
 #container{ /* make nav and main side by side */
     display: flex;
-
     flex-direction: row;
     width: 100%;
 
@@ -38,7 +37,7 @@ header{ /* give the header more space, makes text less cramped */
 
 }
 footer{ /* adjust size of footer */
-    font-size: calc(3px + 1vw);
+    font-size: calc(3px + 2vw);
 
 
 }
@@ -50,13 +49,15 @@ nav{ /* make nav bar the  30% of the width of its parents always*/
 (   2px + 1.5vw);
 }
 main{
-    width : 100%; /* fill in the other 70% */
+    width : 70%; /* fill in the other 70% */
     display: flex;
     flex-direction: row; /* the main content is now alligned in a row */
-    background-color:  #f0f4f8;;
-    padding-left: 2vw;
-    min-height: 100vh; /* Flexible but ensures full coverage */
-    height: auto; /* Prevents abrupt jumps */
+    background-color:  #f0f4f8;
+
+    height: 100vh; /* Flexible but ensures full coverage */
+    justify-content: center;
+
+
 }
 #bot{
     padding-top: 3vw;
@@ -64,37 +65,40 @@ main{
     flex-direction: row; /* Make the short bio and image side by side */
     width: 100%;
     text-align: center;
-    padding-bottom: 4vh ;
+    padding-bottom: 2vh ;
     padding-right: 2vw;
 
 }
 
 #intro{
-    padding-right: 3vw; /* make intro more spacious */
+    padding: 0 3vw; /* make intro more spacious */
     font-size: calc(15px + 2vh); /* make text grow/shrink with scrren */
 }
 #bio{
-    padding-top: 1vw; /* bio more spacious */
-    font-size: calc(20px + 2vh); /* make text grow/shrink with scrren */
+     /* bio more spacious */
+    font-size: calc(15px + 2vh); /* make text grow/shrink with scrren */
+    padding-left: 1vw
 }
 #bot img{
-    max-width: 25vw; /* adjust headshot size */
+    max-width: 20vw; /* adjust headshot size */
     height: auto;
     padding-right: 1vw;
+    padding-left: 2vw;
 }
 main p{
     text-align: center;
 }
 
 
-main h2{
+main h2{ /* make h2s centered and edit size*/
+    padding: 2vh;
     text-align: center;
     font-size: calc(20px + 2vw);
     font-family: "Arial", sans-serif, "helavetica"; /* different font for home */
 }
 
 
-ul{
+ul{ /*remove bullet points */
     list-style: none; /* remove bullet points */
 
 }
@@ -104,75 +108,75 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
     background-color: lightgray;
     font-size : calc(8px + 2vw);
     padding: 10px;
-    margin: 20px auto;
-    width: 80%;
+    margin: 20px auto; /* auto center */
+    width: 80%; /* only makes up 80% of parents */
     color:steelblue;
     text-align: center;
 }
 
 /* starting on education */
-.main-inner { /* make education center */
-    width: 100%;
+    .main-inner { /* make education center */
+        width: 100%;
 
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 0;
-}
-#education li{
-    list-style: none;
-    border: none;
-    border-left: goldenrod solid 3vw;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 0;
+    }
+    #education li{ /* make golden border on left */
+        list-style: none;
+        border: none;
+        border-left: goldenrod solid 3vw;
 
-}
-#education{
-    padding-bottom: 2vh;
-    padding-top: 0;
-}
-#bu, #pc{
-    width : 10vh;
-    height: auto;
-    padding: 1vh 0;
-    background-color: transparent;
-}
-#pc_bio{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-size: calc(5px + 2vh);
-    height: auto;
-    padding-right: 2vh;
-
-}
-#pc_sep{
-    display: flex;
-    flex-direction: row;
-
-    width: 100%;
-}
-#bu_bio{
-    padding-top: 2vh;
-    font-size: calc(8px + 1.2vh);
-    padding-right: 4vw;
-    text-align: center;
-
-}
+    }
+    #education{
+        padding-bottom: 2vh;
+        padding-top: 0;
+    }
+    #bu, #pc{ /* make image size squares, and adjust with page */
+        width : 10vw;
+        height: 10vh;
+        padding: 1vh 1vw;
+        background-color: transparent;
+    }
+    #pc_bio{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        font-size: calc(8px + 1vh);
 
 
-#bu_sep{
-    display: flex;
-    flex-direction: row;
-    width: 100%;}
-#coursework ul li {
-    padding-top: 1vh;
-    font-size: calc(5px + 1vh);
-    padding-right: 2vh;
-    border-left:red solid 3px;
-    margin: 1vh auto;
-}
+
+    }
+    /* next sections edit inside of the sections, alligns items, and makes font: sep, moves image to the side of text */
+        #pc_sep{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+        #bu_bio{
+            padding-top: 2vh;
+            font-size: calc(8px + 1vh);
+
+            text-align: center;
+
+        }
+
+        #bu_sep{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;}
+
+        #coursework ul li {
+
+            font-size: calc(8px + 1vh);
+               padding:0;
+            border-left:red solid 3px;
+
+        }
 
 /* experience starts here */
-    #exp-inner{
-        display : flex;
-        flex-direction: column;
+    #exp-inner{ /* center and make table 95% width  */
         width: 95%;
         text-align: center;
         padding-top: 3px;
@@ -180,20 +184,20 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
 
 
     }
-    #exp-inner h2{
+    #exp-inner h2{ /* add padding beneath main header */
         padding: 2vh;
 
 
     }
 
-    #exp-inner table{
+    #exp-inner table{ /* collapse border to remove extra white space and edit border color */
         width: 90%;
-        border-collapse: collapse;
+        border-collapse: collapse; /* merges adajcent borders into one single border */
         border: 3px solid steelblue;
         margin: 0 auto;
         padding: 2vh 0;
     }
-    #exp-inner table td{
+    #exp-inner table td{ /* edit font inside table */
         font-size: calc(8px + 2vh);
         padding: 1vw;
         border: 3px solid steelblue;
@@ -202,34 +206,50 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
 /*skills staarts here
 
 */
-    #skills-inner h2{
-        padding: 2vh;
-    }
-    #skills-inner ul li {
+    #skills-inner ul li { /* edit font size of skills content */
         border: none;
         background-color: transparent;
         border-left: solid red 5px;
+        padding: 0;
+
+        font-size: calc(3px + 2vh);
+        margin-top: 3vh;
+        padding-left: 1vw;
+
+
+
+    }
+    #skills-inner h3{
         font-size: calc(5px + 2vh);
+    }
+    #skills-inner h2{
+        padding-top: 3vh;
+    }
+    #skills-inner{ /* make the list display in a single column */
+        display: flex;
+        flex-direction: column;
+        padding-left:5vw;
+
+
 
     }
 /* contacts start here */
-    #contact-inner table {
-        width: 100%;
-        margin: 0 auto;
-        font-size: calc(5px + 2vw);
+    #contact-inner table { /* edit font size */
+        font-size: calc(5px + 2vh);
         background-color: lightblue;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
+
     }
-    #contact-inner table td{
-       padding: 1vh;
+    #contact-inner table td{ /* design borders */
         border-color: steelblue;
         border-style: solid;
         border-width: 3px;
+        padding-bottom: 3vh;
+
+
 
     }
 
-    #contact-inner {
+    #contact-inner { /* make the elements display as a colum */
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -240,14 +260,16 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
     }
     #contact-inner h3{
         padding: 2vh;
+        font-size: calc(5px + 2vh);
     }
 
 
 
 
 
-@media screen and (max-width: 1000px) {
-    /* if the screen is below 1000px
+
+@media screen and (max-width: 750px) {
+    /* if the screen is below 750-px
        edit the display */
     #container { /* nav is now above column, both are 100% width of its parents*/
         display: flex;
@@ -281,12 +303,14 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
         width: 15%;
 
     }
-    #intro{
-        font-size: calc(5px + 2vh);
-    }
-    #bio{
-        font-size: calc(5px + 2vh);
-    }
+/* change font size to fit smaller screen */
+        #intro {
+            font-size: calc(5px + 2vh);
+        }
+
+        #bio {
+            font-size: calc(5px + 2vh);
+        }
 
     #bot { /* adjust image and bio to vertical apperance */
         display: flex;
@@ -297,7 +321,7 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
 
     }
 
-    main p{
+    main p {
         text-align: center;
     }
 
@@ -312,27 +336,58 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
     header {
         text-align: center;
     }
+    /* experience starts here */
+        #exp-inner table td{
+            font-size: calc(8px + 1vh);
+            padding: 1vw;
+            border: 3px solid steelblue;
+        }
 
     /* education < 1000px */
-    #education {
-        display: flex;
-        flex-direction: column;
+        #education { /* ensure education tables  displays as a column */
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        #education li {
+            width: 90%;
+            font-size: calc(2px + 2vh);
+            margin: 2vh auto;
+
+
+        }
+
+    #skills-inner ul li {
+        border: none;
+        background-color: transparent;
+        border-left: solid red 5px;
+        padding: 0;
+
+        font-size: calc(1px + 2vh);
+        margin-top: 3vh;
+        padding-left: 1vw;
 
 
     }
-    #education li {
-        width: 90%;
-        font-size: calc(2px + 2vh);
-        margin: 2vh auto;
+    /* skills starts here */
+        #skills-inner h2 {
+            padding-top: 3vh;
+        }
 
-
-    }
-    #skills-inner ul li{
-        font-size: calc(2px + 2vh);
-        padding-right: 3vw;
-    }
-
+        #skills-inner { /* change skills to 3 in a row to fit */
+            display: flex;
+            flex-direction: column;
+            padding-left: 5vw;
+        }
+    /* contact starts here */
+        #contact-inner table {
+            font-size: calc(5px + 1vh);
+            background-color: lightblue;
+        }
 }
+
 
 
 

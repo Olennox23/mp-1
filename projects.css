@@ -1,93 +1,104 @@
-*{
+*{ /* reset margins, padding, and choose a font */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:  "Gill Sans", "Arial", sans-serif, "helavetica";
-}
-body {
-    background-image: url('src/Star-wars-logo-new-tall.webp');
-    background-position: center;
 
-    background-attachment: flex;
+}
+body{
+    background-image: url('src/try.jpeg'); /* make the background and image */
     max-width: 100%;
 }
-p{
-
-    font-size: calc(3px + 10vh);
-    color: #4f4ff1;
-
-    margin-left: 30vw;
-
+header{ /* choose font and color for header */
+    color: lightblue;
+    text-align: center;
+    font-size: calc(10px + 4vh);
+    padding: 2vh;
 }
-#output-box {
+nav{ /* return to home button */
+    color:lightskyblue;
+    text-align: center;
+    font-size: calc(10px + 4vh);
+    padding: 2vh;
+}
+nav a{
+    color:lightblue;
+    text-decoration: none;
+}
+input{ /* edit the size of the input box and color */
+    width: 12vw; /* height.width of box */
+    height: 12vh;
+    background-color: lightsalmon;
+    font-size: calc(10px + 4vh);
+    text-align: center; /* text in input is centered */
+}
+#first{ /* add space between inputs */
+    margin-bottom: 2vh;
+}
+#wrapper{ /* make everything centered and line up as column */
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
+    align-items: center;/* overall screen centered */
 }
-
-#output-table {
-    border: 4px solid royalblue;
-    padding: 2vh 3vw;
-    background-color: white;
-
-
-}
-
-#output {
-    margin: 0;
-    text-align: center;
-    font-size: calc(2vh + 2vw);
-    color: black;
-}
-
-
-
-
-#outputsep{
-  display: flex;
-    flex-direction: row;
-
-
-}
-h1 {
-    color: gold;
-    font-size: calc(10px + 10vh);
-    text-align: center;
-   margin: 30vh 2vw;
-}
-#user label{
-    align-items: center;
+#sep_input{ /* make inputs line up vertically */
     display: flex;
     flex-direction: column;
 }
-input{
-    border: 5px solid red;
-    margin: 2vh 2vw;
-    width: 10vh;
-    height: 10vh;
-    font-size: calc(10px + 2vh);
+#ops{ /* makes all buttons line up in rows of two */
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
 }
-#container{
+button{ /* edit size of buttons and make them oval shaped */
+    width: 8vw;
+    height: 8vw;
+    border-radius: 999px; /* automatically bends the shape to make an oval no matter what */
+    margin: 1vh 1vw;
+    background-color: lightsalmon;
+    font-size: calc(5px + 2vh);
+
+}
+#style_calc{ /* make buttons and inputs go side by side, and add a background*/
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;/* center inputs height wize */
+
+    border: 2px solid gray;
+    background-color: darkgray;
+
+
+}
+#output{
+    font-size: calc(5px + 3vh);
+
+    text-align: center;
+
+}
+#output-box { /* creates the output box */
+    border: 2px solid gray;
+    padding: 1vh 1vw;
+    margin-top: 10vh;
+    background: lightsalmon;
+    width: 40vw;              /* have width adjust with cahnging screen*/
+    height: 13vh;              /* have height adjust with cahnging screen*/
+    text-align: center;
+    display: flex;
+    align-items: center;       /* vertical centering */
+    justify-content: center;  /* horizontal centering */
+    border-radius: 10px;
+
+
+}
+@media screen and (max-width: 600px){ /* make font smaller for smaller screens */
+    #output{
+        font-size: calc(10px + 1vw);
+
+        text-align: center;
+
+    }
 }
 
-#ops button{
-    width: 6vh;
-    height: 6vh;
-    margin: 2vh 2vw;
-    font-size: calc(2px + 2vh);
-}
-
-button{
-    margin: 2vh 2vw;
-    width: 20vw;
-    height: 10vh;
-    font-size: calc(2px + 2vh);
-    color: royalblue;
-}
 
 
 

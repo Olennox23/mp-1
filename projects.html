@@ -7,50 +7,55 @@
     </head>
 
     <body>
-        <div id = outputsep> <!-- Used to align output and calculator buttons-->
+        <div id = "wrapper"> <!-- wraps around inside of body-->
 
-            <div id = "wrapper">
-                <div id = "container">
-                    <div id = "user">
-                        <label for ="first"> </label><input type = "text" id = "first">
-                       <label for ="second"> </label><input type  = "text" id = "second">
+
+            <header>
+
+                <h1> Calculator</h1>
+
+            </header><!-- header ends-->
+            <nav> <!-- linkt to return to main page-->
+                    <ul>
+                        <li><a href = index.html> Back to home</a></li>
+                    </ul>
+            </nav>
+            <!-- output at top, so it can be above the buttons and inputs,-->
+                <div id="output-box">
+                    <div id="output-table">
+                        <p id="output">      </p>
                     </div>
-                    <div id = "ops">
-                        <div id = "sep">
-                                <div id = "sep2">
-                                       <div id = "row1">
-                                               <button onclick = "addition()">+</button>
-                                               <button onclick = "subtract()">-</button>
-                                       </div>
-                                        <div id = "row2">
-                                               <button  onclick = "multiply()">*</button>
-                                               <button  onclick = "divide()">/</button>
-                                        </div>
-                                            <button  onclick = "exp()"> **</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            <button onclick  = "clearfields()">Clear</button>
             </div>
+            <main> <!-- main starts-->
+                <div id = "style_calc"> <!-- used to put inputs on left and bouttons on right, below output-->
+                    <div id = "sep_input"> <!-- organize labels and input-->
+                            <label for ="first"> </label><input type = "text" id = "first">
+                           <label for ="second"> </label><input type  = "text" id = "second">
+                    </div> <!-- sep_input ends-->
+                    <div id = "ops"><!-- all buttons-->
+                           <div id = "row1"> <!-- seperate buttons so we can put them in groups of two -->
+                                   <button onclick = "addition()">+</button>
+                                   <button onclick = "subtract()">-</button>
+                           </div>
+                            <div id = "row2"><!-- seperate buttons so we can put them in groups of two -->
+                                   <button  onclick = "multiply()">*</button>
+                                   <button  onclick = "divide()">/</button>
+                            </div>
+                            <div id = "row3"><!-- seperate buttons so we can put them in groups of two -->
+                                <button  onclick = "exp()"> **</button>
+                                <button onclick  = "clearfields()">Clear</button>
+                            </div>
+                    </div> <!-- end of ops-->
+                </div><!-- end of style_calc-->
 
-            <div id="output-box">
-                <div id="output-table">
-                    <p id="output">Time till lightspeed</p>
-                </div>
-            </div>
+            </main>
 
+
+
+
+
+            <script src = "index.js"></script>
         </div>
-
-    <header>
-
-        <h1> Calculator</h1>
-
-    </header>
-
-       <script src = "index.js"></script>
     </body>
 
 
