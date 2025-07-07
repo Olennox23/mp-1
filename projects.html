@@ -3,20 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <title>projects | resume </title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="projects.css">
     </head>
 
     <body>
-       <!-- Ask for first input-->
-       <label for ="first"> </label><input type = "text" id = "first">
-       <label for ="second"> </label><input type  = "text" id = "second">
-       <button onclick = "addition()">+</button>
-       <button onclick = "subtract()">-</button>
-       <button onclick = "multiply()">*</button>
-       <button onclick = "divide()">/</button>
-       <button onclick = "exp()"> **</button>
-       <button onclick = "clearfields()">Clear</button>
-        <p id = "output"></p>
+    <p id = "output"></p>
+        <div id = "wrapper">
+            <div id = "container">
+                <div id = "user">
+                    <label for ="first"> </label><input type = "text" id = "first">
+                   <label for ="second"> </label><input type  = "text" id = "second">
+                </div>
+                <div id = "ops">
+                    <div id = "sep">
+                            <div id = "sep2">
+                                   <div id = "row1">
+                                           <button onclick = "addition()">+</button>
+                                           <button onclick = "subtract()">-</button>
+                                   </div>
+                                    <div id = "row2">
+                                           <button  onclick = "multiply()">*</button>
+                                           <button  onclick = "divide()">/</button>
+                                    </div>
+                                        <button  onclick = "exp()"> **</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick  = "clearfields()">Clear</button>
+
+        </div>
+    <header>
+        <h1> Calculator</h1>
+
+    </header>
 
        <script src = "index.js"></script>
     </body>
