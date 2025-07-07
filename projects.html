@@ -7,33 +7,45 @@
     </head>
 
     <body>
-    <p id = "output"></p>
-        <div id = "wrapper">
-            <div id = "container">
-                <div id = "user">
-                    <label for ="first"> </label><input type = "text" id = "first">
-                   <label for ="second"> </label><input type  = "text" id = "second">
-                </div>
-                <div id = "ops">
-                    <div id = "sep">
-                            <div id = "sep2">
-                                   <div id = "row1">
-                                           <button onclick = "addition()">+</button>
-                                           <button onclick = "subtract()">-</button>
-                                   </div>
-                                    <div id = "row2">
-                                           <button  onclick = "multiply()">*</button>
-                                           <button  onclick = "divide()">/</button>
-                                    </div>
-                                        <button  onclick = "exp()"> **</button>
-                            </div>
+        <div id = outputsep> <!-- Used to align output and calculator buttons-->
+
+            <div id = "wrapper">
+                <div id = "container">
+                    <div id = "user">
+                        <label for ="first"> </label><input type = "text" id = "first">
+                       <label for ="second"> </label><input type  = "text" id = "second">
+                    </div>
+                    <div id = "ops">
+                        <div id = "sep">
+                                <div id = "sep2">
+                                       <div id = "row1">
+                                               <button onclick = "addition()">+</button>
+                                               <button onclick = "subtract()">-</button>
+                                       </div>
+                                        <div id = "row2">
+                                               <button  onclick = "multiply()">*</button>
+                                               <button  onclick = "divide()">/</button>
+                                        </div>
+                                            <button  onclick = "exp()"> **</button>
+                                </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+
             <button onclick  = "clearfields()">Clear</button>
+            </div>
+
+            <div id="output-box">
+                <div id="output-table">
+                    <p id="output">Time till lightspeed</p>
+                </div>
+            </div>
 
         </div>
+
     <header>
+
         <h1> Calculator</h1>
 
     </header>
