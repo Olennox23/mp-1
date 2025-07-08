@@ -337,10 +337,16 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
         text-align: center;
     }
     /* experience starts here */
+       #exp-inner table{
+           margin: 4vh auto;
+       }
         #exp-inner table td{
-            font-size: calc(8px + 1vh);
+            font-size: calc(8px + 2vh);
             padding: 1vw;
             border: 3px solid steelblue;
+        }
+        #exp-inner h2{
+            font-size: calc(10px + 2vh);
         }
 
     /* education < 1000px */
@@ -383,9 +389,14 @@ ul li{  /* make the navigation bar, edit borders, font size, and make spacious*/
         }
     /* contact starts here */
         #contact-inner table {
+
             font-size: calc(5px + 1vh);
             background-color: lightblue;
         }
+        #contact-inner table{
+            margin: 4vh auto;
+        }
+
 }
 
 

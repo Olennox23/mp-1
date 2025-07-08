@@ -76,10 +76,10 @@ button{ /* edit size of buttons and make them oval shaped */
 
 }
 #output-box { /* creates the output box */
-    border: 2px solid gray;
+    border: white;
     padding: 1vh 1vw;
     margin-top: 10vh;
-    background: lightsalmon;
+    background: lightcyan;
     width: 40vw;              /* have width adjust with cahnging screen*/
     height: 13vh;              /* have height adjust with cahnging screen*/
     text-align: center;

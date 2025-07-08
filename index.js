@@ -90,7 +90,7 @@ function clearfields(){
     // Clear output content and reset color
     let output = document.getElementById("output");
     output.innerHTML = ""; //set output to empty
-    
+
 
 
     }
