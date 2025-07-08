@@ -66,6 +66,7 @@ button{ /* edit size of buttons and make them oval shaped */
 
     border: 2px solid gray;
     background-color: darkgray;
+    margin-bottom : 3vh;
 
 
 }
@@ -78,7 +79,7 @@ button{ /* edit size of buttons and make them oval shaped */
 #output-box { /* creates the output box */
     border: white;
     padding: 1vh 1vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     background: lightcyan;
     width: 40vw;              /* have width adjust with cahnging screen*/
     height: 13vh;              /* have height adjust with cahnging screen*/
